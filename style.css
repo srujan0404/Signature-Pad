@@ -15,7 +15,6 @@ a {
     color: var(--primary-color);
     text-decoration: none;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -31,6 +30,7 @@ a {
 .signature-pad {
     cursor: crosshair;
     width: 800px;
+    margin: 57px -186px;
     /* Or your preferred width */
     height: 400px;
     /* Or your preferred height */
@@ -54,5 +54,10 @@ a {
 }
 
 :root {
-    --primary-color: #4b00ff;
+    --primary-color: rgb(222, 121, 121);
+}
+
+.btn-group button,
+.btn-group a {
+    margin-right: 10px;
 }

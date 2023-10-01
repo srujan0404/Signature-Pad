@@ -78,11 +78,15 @@ form.addEventListener('submit', (event) => {
     const downloadLink = document.createElement('a');
     downloadLink.href = imageURL;
     downloadLink.download = 'signature.png';
-    downloadLink.textContent = 'Download Signature'; // corrected typo
+    downloadLink.textContent = 'Download Your Signature'; // corrected typo
     downloadLink.style.display = 'block'; // added display style
     downloadLink.style.marginTop = '10px'; // added margin-top for better spacing
     document.body.appendChild(downloadLink); // appended to body
     
+    const btnGroup = document.querySelector(".btn-group");
+    downloadLink.className = "submit-button"; // Applying the same class as submit button
+    btnGroup.appendChild(downloadLink);
+
     clearPad();
 });
 
